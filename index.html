@@ -1,0 +1,262 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Netflix Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet">
+ </head>
+ <body class="bg-black text-white">
+  <!-- Header -->
+   <!-- Navbar -->
+   <header class=""   id="header">
+   <nav class="bg-black p-4 flex justify-between items-center">
+   <div class="flex items-center space-x-4">
+   <h1>Sammy movies</h1> 
+   <ul class="hidden md:flex space-x-4">
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       TV Shows
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       Movies
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       New &amp; Popular
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       My List
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search hover:text-gray-400 cursor-pointer">
+    </i>
+    <i class="fas fa-bell hover:text-gray-400 cursor-pointer">
+    </i>
+    <img alt="User profile picture, a generic silhouette of a person" class="h-8 w-8 rounded-full cursor-pointer" height="40" id="userMenuButton" src="https://storage.googleapis.com/a1aa/image/B0JiDpBwAXLrBploQ1xf1eWybiGiRtZ9eQkT5mIyHWBPS8CoA.jpg" width="40"/>
+
+    <div class="md:hidden">
+     <button id="menuButton">
+      <i class="fas fa-bars text-xl">
+      </i>
+     </button>
+    </div>
+    
+    <div class="relative">     
+     <div class="hidden absolute right-0 mt-2 w-48 bg-black border border-gray-700 rounded-md shadow-lg" id="userMenu">
+        
+      <a class="block px-4 py-2 text-sm hover:bg-gray-700" href="#">
+       Account
+      </a>
+      <a class="block px-4 py-2 text-sm hover:bg-gray-700" href="#">
+       Help Center
+      </a>
+      <a class="block px-4 py-2 text-sm hover:bg-gray-700" href="#">
+       Sign out
+      </a>
+      
+     </div>
+    </div>
+   </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="hidden md:hidden" id="mobileMenu">
+   <ul class="space-y-4 p-4">
+    <li>
+     <a class="block hover:text-gray-400" href="#">
+      Home
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-gray-400" href="#">
+      TV Shows
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-gray-400" href="#">
+      Movies
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-gray-400" href="#">
+      New &amp; Popular
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-gray-400" href="#">
+      My List
+     </a>
+    </li>
+   </ul>
+  </div>
+  
+   </header>
+  <!-- Main Content -->
+  <section class="relative">
+   <!-- Hero Section -->
+    <img alt="Hero image with a dramatic scene from a popular show or movie" class=" h-96 object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/TpmxwOlLCTYUA1OF9rq9gJUctMCtj1HajSA81CfIblCPjCeTA.jpg" width="1920"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent">
+    </div>
+    <div class="absolute bottom-8 left-8">
+     <h1 class="text-4xl md:text-6xl font-bold">
+      Popular Show
+     </h1>
+     <p class="mt-2 text-lg md:text-xl">
+      Watch the latest episodes now
+     </p>
+     <div class="mt-4 flex space-x-4">
+      <button class="bg-white text-black px-4 py-2 rounded flex items-center space-x-2">
+       <i class="fas fa-play">
+       </i>
+       <span>
+        Play
+       </span>
+      </button>
+      <button class="bg-gray-700 bg-opacity-75 text-white px-4 py-2 rounded flex items-center space-x-2">
+       <i class="fas fa-info-circle">
+       </i>
+       <span>
+        More Info
+       </span>
+      </button>
+     </div>
+    </div>
+    
+   </section>
+   <!-- Rows of Movies/Shows -->
+   <section class="mt-8 px-4 md:px-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Trending Now
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Poster of Movie 1 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/zFgCy9hBO3JeAaa73WLHiWVHNde2qBHTUqb8TadC0g15FF8TA.jpg" width="200"/>
+     <img alt="Poster of Movie 2 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/2MfZzWaGWS1XAKdKeTDgfNaYHbg8EixZg8kj4LYJP8bINK4nA.jpg" width="200"/>
+     <img alt="Poster of Movie 3 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/SmArOzfb8X2dSyau5fIFDCawWIa3RgRVcP1ZbOjfdhbrMK4nA.jpg" width="200"/>
+     <img alt="Poster of Movie 4 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/syWzGTfImnUXCqfnzenADboV9iNRNeohVlceQgJb8MaE1ogfE.jpg" width="200"/>
+     <img alt="Poster of Movie 5 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/uo9prktrScJDPFQkFjwLyYJdhBy4jXDkHqrf9QxBViCeFF8TA.jpg" width="200"/>
+     <img alt="Poster of Movie 6 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/Gfj4jUB7VvwBXytDU5QeWV1gizBqEwAK5YrqyWOdXfGfXUwPB.jpg" width="200"/>
+     <img alt="Poster of Movie 7 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/FFlOjeN2Yww6ACzsZ00R75aTffRsQ9wvWvWSecA9OEsnZUwPB.jpg" width="200"/>
+     <img alt="Poster of Movie 8 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/smA7UMstpFZNAh5ye1IS86wfOjbVfBJt0e9NHUR6EsPBZUwPB.jpg" width="200"/>
+    </div>
+   </section>
+   <section class="mt-8 px-4 md:px-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Top Picks for You
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Poster of Show 1 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/1c2EeP3f38pOPkg5o2fPfq8mI7JvZ2TKe8YV1CETeZnePjCeTA.jpg" width="200"/>
+     <img alt="Poster of Show 2 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/tOlq7bmyVSb1ClWcrRe5iGA9cuR1cJ0XAS9x8V3PViKOjCeTA.jpg" width="200"/>
+     <img alt="Poster of Show 3 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/wewTpdL4eqkKK0IkjetPz8qhSzUW0dXB4UWunJbEFFrYMK4nA.jpg" width="200"/>
+     <img alt="Poster of Show 4 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/RIW9lZapeF0HIyHTrtS9k2bfBDTv6ayfjKqIFfg3kB6f0ogfE.jpg" width="200"/>
+     <img alt="Poster of Show 5 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/yWfBFuZ1EkV8VicAeHI7JfwrBDezDZxf3k0UIn4eCx8AmRBfJA.jpg" width="200"/>
+     <img alt="Poster of Show 6 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/IvnYuZag1J5KIBpa1pDYF8C7GqMI9C89C18tZzWcaojgRBfJA.jpg" width="200"/>
+     <img alt="Poster of Show 7 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/H7LhPcs6SbJ6KxENa3QxfIPvsA9YfK2UFo5bfsTCatSUNK4nA.jpg" width="200"/>
+     <img alt="Poster of Show 8 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/5cpvxBdNcmL1JhBtkbgA1NaYLDnmeqew0gsBe6VLcWxrLK4nA.jpg" width="200"/>
+    </div>
+   </section>
+   <section class="mt-8 px-4 md:px-8">
+    <h2 class="text-2xl font-bold mb-4">
+     New Releases
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Poster of New Release 1 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/Bwx7B1RXTMoQHZK6NokrLUF0UDewl3sRxG4vfwPCtGzOGF8TA.jpg" width="200"/>
+     <img alt="Poster of New Release 2 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/KlUGMiLJSjo3CZFG0TtVv4LiFKZSol7fPEFSQk6hSUBFjCeTA.jpg" width="200"/>
+     <img alt="Poster of New Release 3 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/mvJMNsqoPobQPptGrWrJFt16JoCanovNS4H88fx8FELJjCeTA.jpg" width="200"/>
+     <img alt="Poster of New Release 4 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/f6XcOOaqJZWrAyQX8zBisoiwbrFkWI1V5eyLLehGfLl1XUwPB.jpg" width="200"/>
+     <img alt="Poster of New Release 5 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/BQfwGBEtk7QlUar6q4BSEfV6d8N4SWnUVVFPAqeaLauKMK4nA.jpg" width="200"/>
+     <img alt="Poster of New Release 6 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/xAEjXWOSMwLoHNPHMHbUNzhXu6wr0cVy5ZP2rCBoOx1dRBfJA.jpg" width="200"/>
+     <img alt="Poster of New Release 7 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/yjQ71bTuExZLK9Dy9glALZZorhUefzVVtLJdxS02opwrGF8TA.jpg" width="200"/>
+     <img alt="Poster of New Release 8 with a dramatic scene" class="w-48 h-72 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/AwE5pl1fKfhaO0MhKwIA8KbXGHDyZZg5wBd8M51SdOdhGF8TA.jpg" width="200"/>
+    </div>
+   </section>
+
+   <script>
+   document.getElementById('userMenuButton').addEventListener('click', function() {
+
+            var userMenu = document.getElementById('userMenu');
+            userMenu.classList.toggle('hidden');
+        });
+
+        document.getElementById('menuButton').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+  </script>
+  <!-- Footer -->
+  <footer class="mt-16 p-4 bg-black text-gray-500 footer-a">
+   <div class="">
+    <div class="footer-a text-center space-between">
+     <a class="hover:text-gray-400" href="#">
+      Audio and Subtitles
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Help Center
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Gift Cards
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Media Center
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Investor Relations
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Jobs
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Terms of Use
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Privacy
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Legal Notices
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Cookie Preferences
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Corporate Information
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Contact Us
+     </a>
+    </div>
+    <div class="mt-4 md:mt-0 text-center">
+     <i class="fab fa-facebook-f hover:text-gray-400 cursor-pointer">
+     </i>
+     <i class="fab fa-instagram hover:text-gray-400 cursor-pointer mx-4">
+     </i>
+     <i class="fab fa-twitter hover:text-gray-400 cursor-pointer">
+     </i>
+    </div>
+   </div>
+   <div class="mt-4 text-center">
+    <p>
+     © 2023 Sammy movies. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  
+ </body>
+</html>
